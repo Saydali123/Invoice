@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    driver-class-name:
+    url: jdbc:postgresql://localhost:5432/invoice
+    username: postgres
+    password: root123
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        format_sql: true
+    show-sql: true
+  flyway:
+    baseline-on-migrate: true
+    enabled: true
+
+
+
